@@ -1,5 +1,3 @@
-# dw
-Repositório para as atividades da disciplina de Desenvolvimento Web
 # Repositório DW - Desenvolvimento Web
 
 Este repositório contém os projetos e atividades da disciplina de Desenvolvimento Web.
