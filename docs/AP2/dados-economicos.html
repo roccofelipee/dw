@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Econômicos - InvestSmart</title>
+    <meta name="description" content="Dados econômicos atualizados para auxiliar suas decisões de investimento.">
+    
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header semântico -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-chart-line"></i>
+                    <span>InvestSmart</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Dados Econômicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="investimentos.html" class="nav-link">Investimentos</a>
+                    </li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu de navegação">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página de Dados Econômicos -->
+    <main class="main">
+        <section class="data-section">
+            <div class="container">
+                <h1 class="section-title">Dados Econômicos</h1>
+                <p class="section-description">Acompanhe os principais indicadores econômicos para auxiliar suas decisões de investimento.</p>
+                
+                <div class="data-cards-grid" id="economic-data-container">
+                    <!-- Dados serão carregados dinamicamente pelo JavaScript -->
+                    <div class="loading-state">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando dados econômicos...</p>
+                    </div>
+                </div>
+
+                <div class="api-info">
+                    <p>Dados fornecidos por <a href="https://docs.awesomeapi.com.br/api-de-moedas" target="_blank">Awesome API</a> e <a href="https://brasilapi.com.br/docs" target="_blank">Brasil API</a>.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer semântico -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Sobre o InvestSmart</h3>
+                    <p class="footer-text">
+                        Plataforma educacional para simulação de investimentos, 
+                        desenvolvida para ajudar na tomada de decisões financeiras 
+                        conscientes e informadas.
+                    </p>
+                    <p class="footer-text">
+                        <strong>Projeto Acadêmico - AP2 Desenvolvimento Web</strong>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Links Úteis</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">Dados Econômicos</a></li>
+                        <li><a href="investimentos.html" class="footer-link">Investimentos</a></li>
+                        <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+                        <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contato@investsmart.edu</p>
+                        <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 InvestSmart. Todos os direitos reservados. Projeto educacional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para dados econômicos -->
+    <script src="js/economic-data.js"></script>
+    <script src="js/main.js"></script> <!-- Inclui o main.js para a navegação do header -->
+</body>
+</html>
+
