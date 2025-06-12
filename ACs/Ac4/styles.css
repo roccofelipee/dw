@@ -1,0 +1,79 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif; /* Questão 9: Escolha uma família de fontes para o corpo do texto */
+    line-height: 1.6; /* Questão 8: Defina uma altura de linha para a página inteira */
+    background-color: #f4f4f4; /* Questão 4: Defina uma cor de fundo para a página inteira */
+    color: #333; /* Questão 10: Ajuste a cor dos cabeçalhos */
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 960px; /* Questão 5: Defina uma largura máxima para o conteúdo */
+    margin: 20px auto; /* Questão 5: Centralize-o */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografia e cor */
+h1, h2 {
+    font-family: 'Georgia', serif; /* Questão 9: Escolha uma família de fontes para cabeçalhos */
+    color: #0056b3; /* Questão 10: Ajuste a cor dos cabeçalhos */
+    font-weight: bold; /* Questão 10: Ajuste o peso dos cabeçalhos */
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 0.9em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Questão 11: Adicione alterações de cor instantâneas para links */
+a:visited {
+    color: #663399;
+}
+
+/* Estilizando imagens e listas */
+img {
+    max-width: 100%; /* Questão 16: Certifique-se de que seja responsivo, diminuindo com a largura da página */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem */
+    border: 1px solid #ddd; /* Questão 14: Adicione uma borda */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Questão 15: Adicione um pouco de sombra para um efeito lifting */
+}
+
+ul {
+    list-style-type: disc; /* Questão 18: Adicione marcadores ou números personalizados (disc é o padrão) */
+    margin: 20px 0; /* Questão 19: Ajuste as margens e o preenchimento para obter o espaçamento adequado */
+    padding: 0 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Feedback e revisão */
+/* Não há instruções específicas para feedback visual além do que já foi feito com links e bordas/sombras. */
+
+
