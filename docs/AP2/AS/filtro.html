@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Investimentos - InvestSmart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Filtro de Investimentos</h1>
+            <p>Use os filtros abaixo para encontrar os investimentos ideais para você</p>
+        </header>
+
+        <div class="filtros-container">
+            <div class="filtro-grupo">
+                <label for="tipo-investimento">Tipo de Investimento:</label>
+                <select id="tipo-investimento">
+                    <option value="">Todos</option>
+                    <option value="renda-fixa">Renda Fixa</option>
+                    <option value="renda-variavel">Renda Variável</option>
+                    <option value="fundos">Fundos</option>
+                    <option value="criptomoedas">Criptomoedas</option>
+                </select>
+            </div>
+
+            <div class="filtro-grupo">
+                <label for="risco">Nível de Risco:</label>
+                <select id="risco">
+                    <option value="">Todos</option>
+                    <option value="baixo">Baixo</option>
+                    <option value="medio">Médio</option>
+                    <option value="alto">Alto</option>
+                </select>
+            </div>
+
+            <div class="filtro-grupo">
+                <label for="rentabilidade-min">Rentabilidade Mínima (% a.a.):</label>
+                <input type="number" id="rentabilidade-min" placeholder="Ex: 5" min="0" max="100" step="0.1">
+            </div>
+
+            <div class="filtro-grupo">
+                <label for="valor-min">Valor Mínimo (R$):</label>
+                <input type="number" id="valor-min" placeholder="Ex: 1000" min="0" step="100">
+            </div>
+
+            <button id="limpar-filtros" class="btn-limpar">Limpar Filtros</button>
+        </div>
+
+        <div class="resultados-info">
+            <p id="contador-resultados">Mostrando <span id="total-resultados">0</span> investimentos</p>
+        </div>
+
+        <div class="tabela-container">
+            <table id="tabela-investimentos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Risco</th>
+                        <th>Rentabilidade (% a.a.)</th>
+                        <th>Valor Mínimo</th>
+                        <th>Liquidez</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-investimentos">
+                    <!-- Os dados serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="sem-resultados" class="sem-resultados" style="display: none;">
+            <h3>Nenhum investimento encontrado</h3>
+            <p>Tente ajustar os filtros para encontrar mais opções.</p>
+        </div>
+    </div>
+
+    <script src="filtro.js"></script>
+</body>
+</html>
+
